@@ -13,12 +13,10 @@ import pandas as pd
 import pickle
 
 # Load the saved model
-model_path = 'email_open_prediction_model.pkl'
-
-try:
+model_path = 'Project-EMC/email_open_prediction_model.pkl'
     with open(model_path, 'rb') as model_file:
         model = pickle.load(model_file)
-        st.write("Model loaded successfully.")
+      
 # Page title
 st.title("Email Marketing Campaign Prediction")
 st.write("Predict if a customer will open their emails based on their past behavior and attributes.")
