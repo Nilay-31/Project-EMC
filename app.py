@@ -14,7 +14,8 @@ import pickle
 
 # Load the saved model
 model_path = 'Project-EMC/email_open_prediction_model.pkl'
-    with open(model_path, 'rb') as model_file:
+try:   
+with open(model_path, 'rb') as model_file:
         model = pickle.load(model_file)
       
 # Page title
