@@ -15,7 +15,7 @@ import pickle
 # Load the saved model
 model_path = 'Project-EMC/email_open_prediction_model.pkl'
 with open("email_open_prediction_model.pkl", 'rb') as file:
-    model = pickle.load(file)
+    model=pickle.load(file)
 
 # Page title
 st.title("Email Marketing Campaign Prediction")
