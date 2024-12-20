@@ -14,9 +14,8 @@ import pickle
 
 # Load the saved model
 model_path = 'Project-EMC/email_open_prediction_model.pkl'
-with open("email_open_prediction_model.pkl", 'rb') as file:
-    model=pickle.load(file)
-
+with open("email_open_prediction_model.pkl", 'rb') as model_file:
+   model = pickle.load(model_file)
 # Page title
 st.title("Email Marketing Campaign Prediction")
 st.write("Predict if a customer will open their emails based on their past behavior and attributes.")
