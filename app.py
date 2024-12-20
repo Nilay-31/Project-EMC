@@ -14,8 +14,8 @@ import pickle
 
 # Load the saved model
 model_path = 'email_open_prediction_model.pkl'
-with open(model_path, 'rb') as model_file:
-    model = pickle.load(model_file)
+with open(model_path, 'rb') as file:
+    model = pickle.load(file)
 
 # Page title
 st.title("Email Marketing Campaign Prediction")
