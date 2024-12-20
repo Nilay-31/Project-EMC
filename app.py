@@ -13,7 +13,7 @@ import pandas as pd
 import pickle
 
 # Load the saved model
-#model_path = 'Project-EMC/email_open_prediction_model.pkl'
+model_path = 'Project-EMC/email_open_prediction_model.pkl'
 with open("email_open_prediction_model.pkl", 'rb') as model_file:
    model = pickle.load(model_file)
     
